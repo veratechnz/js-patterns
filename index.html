@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script>
+		//1. //The Constructor Pattern or Constructor Function:
+		//Creating A Person Object:
+		// A Pattern We Can call with the new keyword: 
+
+		// function Person(firstName, lastName){
+		// 	this.firstName = firstName;
+		// 	this.lastName = lastName;
+
+		// 	//Here we have a method.
+		// 	this.sayName = function () {
+		// 		return 'My name is' + this.firstName + ' ' + this.lastName
+		// 	};
+		// }
+
+		// var johnDoe = new Person('John', 'Doe');
+		// var janeDoe = new Person('Jane', 'Doe');
+
+		// var isPerson = johnDoe instanceof Person;
+		// var isSame = johnDoe.sayName === janeDoe.sayName;
+
+ // ****************************************************************
+		
+		//2.// The Inheritance Pattern or code re-use
+		// In js no classes only objects. Inheritance is achieved from one object to another. 
+
+
+		// Re- revise: https://www.youtube.com/watch?v=mUJ6TOv2LAM&list=PLrzrNeNx3kNHsaPfrpPo0AlW-MhJE6gOA&index=13
+
+		// function Beverage(name, temperature){
+		// 	this.name = name;
+		// 	this.temperature = temperature;
+		// }
+
+		// Beverage.prototype.drink = function(){
+		// 	console.log("I'm drinking" + this.name)
+		// }
+
+		// function Coffee(type){
+		// 	this.type = type;
+		// }
+
+		// Coffee.prototype = Object.create(Beverage.prototype);
+		// Coffee.prototype.sip = function () {
+		// 	console.log('Sipping some awesome' + this.type + ' ' + this.name);
+		// };
+
+		// var water = new Beverage('water', 'cold');
+		// var coffee = new Coffee('bold and dark');
+
+		// Via console.log try
+		// water.drink();
+		// coffee.drink();
+		// coffee.sip();
+
+
+// ********************************************************************************************************
+
+
+		//1. Variable Scope & Closures
+		// 2 main types of variable scope = Global and local
+		//If you create a var without var it is global by default. 
+		// a:
+		// var aGlobalA = 'A global variable a';
+
+		// function newFunction(){
+		// 	var aLocal = 'A local variable a';
+
+		// 	//Declaring a global variable inside of a function 
+		// 	//*** try at tech
+		// 	window.newGlobal = 'A global variable b';
+
+		// 	//If you remove console log from the body of the function 
+		// 	//scope will be illustrated. 
+		// 	console.log(aGlobalA);
+		// 	console.log(aLocal);
+
+		// }
+
+		// //Try at tech: // console.log(newGlobal);
+		
+		// newFunction();
+
+		// b. Access to the global scope
+
+		// var twins = 'This is twin global';
+
+		// function tester(){
+			
+		// 	var twins = 'This is twin local';
+		// 	console.log(twins);
+		// 	//Global is here
+		// 	console.log(window.twins);
+
+		// }
+
+		// tester();
+
+		// c.
+
+		
+
+
+		//Events
+
+
+	</script>
+</body>
+</html>
